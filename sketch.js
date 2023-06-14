@@ -3,7 +3,7 @@ var gun,bluebubble,redbubble, bullet, backBoard;
 
 var gunImg,bubbleImg, bulletImg, blastImg, backBoardImg;
 
-var redBubbleGroup, redBubbleGroup, bulletGroup;
+var redBubbleGroup, blueBubbleGroup, bulletGroup;
 
 
 var life =3;
@@ -84,7 +84,7 @@ function draw() {
 }
 
 function drawblueBubble(){
-  bluebubble = createSprite(800,random(20,780),40,40);
+  bluebubble = createSprite(800,random(20,580),40,40);
   bluebubble.addImage(blueBubbleImg);
   bluebubble.scale = 0.1;
   bluebubble.velocityX = -8;
@@ -92,7 +92,7 @@ function drawblueBubble(){
   blueBubbleGroup.add(bluebubble);
 }
 function drawredBubble(){
-  redbubble = createSprite(800,random(20,780),40,40);
+  redbubble = createSprite(800,random(20,580),40,40);
   redbubble.addImage(redBubbleImg);
   redbubble.scale = 0.1;
   redbubble.velocityX = -8;
